@@ -1,0 +1,16 @@
+{% extends 'babse.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block title %}
+    <h1>My Top 5 Favorites</h1>
+    <h4>jffn, {{ first_name }}</h4>
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for favorite in favorites %}
+            <li>{{ favorite }}</li>
+        {% endfor %}
+    </ul>
+    {% endblock %}    
